@@ -1,20 +1,21 @@
 package com.company;
 
 public class Player {
-    private String name;
-    private Hand hand;
-    private ScoreCard scoreCard;
 
-    public Player(String name, ScoreCard sCard) {
+    public String name;
+    public Scorecard scorecard;
+    public Hand hand;
+
+    public Player(String name, Scorecard scorecard) {
         this.name = name;
-        this.scoreCard = sCard;
-    }
-
-    public void setHand(Hand hand) {
-        this.hand = hand;
+        this.scorecard = scorecard;
     }
 
     public String getName() {
         return name;
+    }
+
+    public void setHand(Hand hand) {
+        this.hand = hand;
     }
 }
